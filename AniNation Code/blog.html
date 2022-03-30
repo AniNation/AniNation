@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AniNation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>What is Anime and why should you watch it?</h1>
+    </section>
+
+    <!---------- Blog Page Content ---------->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/sao.jpg" />
+          <h2>What is Anime and why should you watch it?</h2>
+
+          <p>
+            Anime, short for animation, is hand-drawn and computer-generated animation 
+            originating from the island nation of Japan. Anime is different from cartoons 
+            because anime has its own distinct art style, so it is important to know that all 
+            animes are considered as cartoons, but not all cartoons are considered as anime. 
+          </p>
+          <br />
+          <p>
+            Anime like any other form of entertainment is liked by different kinds of people, so it 
+            is entirely up to you if you want to give anime a chance. With that being said these are
+            the reasons why you should watch anime. Anime is the perfect form of media when you want
+            to spice up the shows you watch, this is because anime has a vast catalogue of genres 
+            you can pick from and each anime has their own unique art style and form of storytelling.
+            Anime is unique from other form of medias because of the vast amount of art styles present
+            it goes from simplistic and meant for children to dark with a bit of realism, its colors
+            also vary from vibrant all the way to monochrome.  There are also countless different 
+            shows airing everyday with options reaching from anime decades ago. Anime is accessible
+            to any kind of person from any age group be it children or seniors there is an anime out
+            there for you. Anime offers more complex stories with in-depth themes and character
+            developments. When watching an anime, a story line can last multiple episodes whereas 
+            its western counterparts work in an episodic way of storytelling. 
+
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Shonen</span>
+            <span>1</span>
+          </div>
+          <div>
+            <span>Shojo</span>
+            <span>2</span>
+          </div>
+          <div>
+            <span>Seinen</span>
+            <span>3</span>
+          </div>
+          <div>
+            <span>Josei</span>
+            <span>4</span>
+          </div>
+          <div>
+            <span>Kodomomuke</span>
+            <span>5</span>
+          </div>
+          <div>
+            <span>Isekai</span>
+            <span>6</span>
+          </div>
+          <div>
+            <span>Mecha</span>
+            <span>7</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------- footer ---------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We are a non-profit organization that caters to geeks and anime
+        enthusiasts of all ages. We provide
+        <br />
+        our users with up-to-date information about AniNews, the people behind
+        them, and our own hot takes on anime.
+        <br />Notice: All images used in this site are for fair-use only.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>made with <i class="fa fa-heart-o"></i> by AniNation. 2022.</p>
+    </section>
+
+    <!----JavaScript for toggle menu---->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
